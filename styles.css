@@ -10,6 +10,7 @@ h1{
 .projects{
     display:flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .project{
@@ -18,6 +19,7 @@ h1{
     padding: 20px 10px;
     background: rgb(rgb(204, 154, 154), rgb(143, 199, 143), rgb(120, 120, 149));
     border-radius: 25%;
+    text-align: center;
 
 }
 
@@ -46,14 +48,14 @@ a{
 .about{
     display:flex;
     flex-wrap:wrap;
-    margin-right: 100px;
-    margin-left: 100px;
+    margin: 20px 100px;
     justify-content: center;
+    align-items: center;
 }
 
 .about img{
     width: 150px;
-    /* height: 200px; */
+    margin: 10px;
     border-radius: 25%;
     border: 2px solid rgb(120, 120, 149);
 }
@@ -63,5 +65,7 @@ a{
     text-align: center;
     margin: auto;
     line-height: 125%;
+    font-size: 1rem;
+    color: #333;
 
 }
