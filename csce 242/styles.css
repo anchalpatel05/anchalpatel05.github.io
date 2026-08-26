@@ -1,0 +1,50 @@
+body {
+    background-color: #F5F5DC;
+    color: #A2574F;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+#page-content{
+    background-color: #FFC2BA;
+    border: 3px solid #A2574F;
+    margin: 40px auto;
+    max-width: 850px;
+    padding: 30px;
+}
+
+#page-header {
+    background-color: #A2574F;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+#main-content {
+    padding: 20px 10px;
+}
+
+#course-description {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+#repository-link {
+    font-weight: bold;
+}
+
+#assignment-list {
+    line-height: 2;
+}
+
+a {
+    color:#B7410E;
+}
+
+#page-footer {
+    border-top: 2px solid #A2574F;
+    color:#B7410E;
+    text-align: center;
+}
