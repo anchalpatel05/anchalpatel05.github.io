@@ -1,0 +1,157 @@
+body {
+    background-color: #dceff5;
+    color: #9c9e8a;
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+#main-header {
+    background-color: #245b73;
+    margin: 0 auto;
+    max-width: 1200px;
+    text-align: center;
+}
+
+#main-header h1 {
+    color: #f8e6c0;
+    margin: 0;
+    padding: 35px 0;
+}
+
+#main-nav ul{
+    background-color: #3f8da8;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#main-nav li {
+    border-right: 2px solid #f4f4d9;
+    flex: 1;
+}
+#main-nav li:last-child {
+    border-right: none;
+}
+
+#main-nav a {
+    color: white;
+    display: block;
+    font-weight: bold;
+    padding: 12px;
+    text-decoration: none;
+}
+
+#main-nav a:hover {
+    background-color: #b85e5e;
+}
+
+#page-content{
+    display: flex;
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
+#page-content,#contact {
+margin: 0 auto;
+max-width: 1200px;
+}
+
+#sidebar{
+    background-color: #f8e6c0;
+    min-width: 170px;
+    padding: 15px;
+}
+
+#sidebar h3 {
+    color: #b85e5e;
+    text-align: center;
+}
+
+#sidebar ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+#sidebar a{
+    background-color: white;
+    color: #b85e5e;
+    display: block;
+    margin: 8px 0;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.content-area{
+    flex: 1;
+}
+
+#feature-section{
+    background-color: #b9dce6;
+    display: flex;
+    padding: 15px;
+}
+
+.feature-card{
+    flex: 1;
+    padding: 8px;
+    text-align: center;
+}
+
+.feature-card h2 {
+    color: white;
+}
+
+.feature-card img {
+    max-width: 100%;
+}
+
+#destinations{
+    background-color: #4e8b9b;
+    color: white;
+    display: flex;
+    margin: 10px 0;
+    padding: 15px;
+}
+
+.travel-text{
+    flex: 1;
+    padding-right: 15px;
+}
+
+.travel-article h2 {
+    margin-top: 0;
+}
+
+#contact {
+    background-color: #245b73;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+#contact p {
+    margin: 0;
+}
+
+@media (max-width: 700px) {
+    #main-nav ul,
+    #page-content,
+    #feature-section,
+    .travel-article {
+        display: block;
+    }
+
+    #main-nav a {
+        border-bottom: 1px solid white;
+    }
+
+    .feature-card img,
+    .travel-article img {
+        height: auto;
+        margin-top: 10px;
+        width: 100%;
+    }
+}
