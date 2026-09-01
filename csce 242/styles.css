@@ -9,18 +9,28 @@ body {
     background-color: #FFC2BA;
     border: 3px solid #A2574F;
     margin: 40px auto;
-    max-width: 850px;
+    max-width: 1250px;
     padding: 30px;
+    box-sizing: border-box;
 }
 
 #page-header {
     background-color: #A2574F;
     color: white;
-    padding: 20px;
+    padding: 25px;
     text-align: center;
 }
 
+#page-header h1{
+    font-size: 45px;
+    margin: 0;
+}
 
+#page-header h2{
+    font-size: 22px;
+    font-weight: normal;
+    margin: 10px 0 0;
+}
 
 #main-content {
     padding: 20px 10px;
@@ -29,11 +39,63 @@ body {
 #course-description {
     font-size: 18px;
     line-height: 1.6;
+    text-align: center;
 }
 
 #repository-link {
     font-weight: bold;
+    text-align: center;
 }
+
+#repository-link a {
+    color:#B7410E;
+}
+
+#assignments h2, #projects h2{
+    color:#A2574F;
+    font-size: 34px;
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+.card {
+    background-color: #ffe0db;
+    box-sizing: border-box;
+    flex: 1;
+    max-width: 360px;
+    padding: 20px;
+}
+
+.card h3 {
+    color: #A2574F;
+    font-size: 22px;
+    margin-top: 0;
+    text-align: center;
+}
+
+.card img {
+    display: block;
+    height: 150px;
+    margin: 20px auto;
+    object-fit: cover;
+    width: 100%;
+}
+
+.card p {
+    color: #6e342f;
+    font-size: 17px;
+    line-height: 1.4;
+}
+
+#projects {
+    margin-top: 45px;
+}
+
 
 #assignment-list {
     line-height: 2;
@@ -46,5 +108,29 @@ a {
 #page-footer {
     border-top: 2px solid #A2574F;
     color:#B7410E;
+    margin-top: 45px;
+    padding-top: 15px;
     text-align: center;
+}
+
+@media (max-width: 700px) {
+    #page-content {
+        border: none;
+        margin: 0;
+        padding: 15px;
+    }
+
+    #page-header h1 {
+        font-size: 34px;
+    }
+
+    .card-container {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .card {
+        max-width: 360px;
+        width: 100%;
+    }
 }
