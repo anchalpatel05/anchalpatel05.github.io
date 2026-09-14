@@ -1,0 +1,112 @@
+/*Structure*/
+body {
+    margin:0;
+    background:#fff4e6;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#3c2f2f;
+}
+
+#content {
+    max-width:1000px;
+    margin:auto;
+    padding:20px;
+    text-align: center;
+}
+
+/*Typography*/
+h1{
+    margin:0;
+    color:#3c2f2f;
+}
+
+h2{
+    color:#854442;
+    font: size 1.2em;
+}
+
+h3{
+    margin-top:0;
+    color:#854442
+}
+
+/*Columns*/
+.columns {
+    display:flex;
+    gap:25px;
+}
+
+.column{
+    position:relative;
+    flex:1;
+    min-height:220px;
+    padding:20px;
+    border:2px solid #854442;
+}
+
+/*Speech*/
+#speech {
+    cursor: pointer;
+}
+
+.speech-bubble{
+    position:relative;
+    display:inline-block;
+    margin: top 45px;
+    padding:12px 15px;
+    border:2px solid #854442;
+    border-radius: 12px;
+    background: wheat;
+}
+
+.speech-bubble:after {
+    position:absolute;
+    bottom: -12px;
+    left:50%;
+    width:18px;
+    height:18px;
+    border-right:2px solid #854442;
+    border-bottom:2px solid #854442;
+    background:white;
+    content:"";
+    transform: translateX(-50%) rotate(45deg);
+}
+/*Beverage*/
+#beverage {
+    padding:3px;
+}
+#beverage-content{
+    color:#3c2f2f;
+    font-weight:bold;
+}
+
+/*Sticker*/
+#sun-image {
+    width:110px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.sticker {
+    position: absolute;
+    font-size: 25px;
+}
+
+/*Footer*/
+footer{
+    color:#854442;
+}
+
+@media (max-width:700px){
+    .columns{
+        display:block;
+    }
+
+    .column {
+        min-height: 180px;
+        border-bottom:0;
+    }
+
+     .column:last-child {
+        border-bottom:2px solid #be9b7b;
+    }
+}
