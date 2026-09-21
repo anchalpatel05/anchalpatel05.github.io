@@ -1,0 +1,157 @@
+/*Structures*/
+:root{
+    --background:#f0ebe3;
+    --headings:#03698f;
+    --header:#f0ebe3;
+    --main-nav:#f0ebe3;
+    --cards-bg:#ffffff;
+    --cards-border:#adbcc1;
+    --light-text:#f0ebe3;
+    --accent-text:#860037;
+    --highlight-bg:#229da7;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    margin:0;
+    padding:0;
+}
+
+/*Header*/
+#main-header h1{
+    background-color:var(--header);
+    position:relative;
+}
+
+/*Typography*/
+#main-header h1 {
+    color:var(--headings);
+    text-align:center;
+    padding:35px 0 10px;
+    margin:0;
+    font-size:3em;
+}
+
+#main-header h2 {
+    color:var(--accent-text);
+    text-align:center;
+    margin:0 0 25px;
+    font-size:2em;
+}
+
+h3{
+    color:var(--headings);
+}
+
+/*Navigation*/
+#main-nav ul {
+    list-style-type:none;
+    padding-left:0;
+    margin:0;
+}
+
+#main-nav li {
+    padding:10px 5px;
+    text-align:left;
+    font-size:20px;
+}
+
+#main-nav a {
+    color:var(--headings);
+    text-decoration:none;
+}
+
+#main-nav a:hover {
+    color:var(--accent-text);
+    cursor:pointer;
+}
+
+/* Toggle Navigation */
+#toggle-nav {
+    color:var(--headings);
+    cursor:pointer;
+    font-size:20px;
+    margin-left:5px;
+    padding-bottom:5px;
+}
+
+/* Exercise Sections */
+.exercise {
+    background:var(--cards-bg);
+    border:2px solid var(--cards-border);
+    margin:20px 15px 0;
+    min-height:230px;
+    padding:25px 15px;
+    text-align:center;
+}
+
+.exercise h3 {
+    font-size:1.6em;
+    margin:15px 0 25px;
+}
+
+.exercise p {
+    color:var(--headings);
+    font-size:1.35em;
+    margin:18px 0;
+}
+
+#days-missed {
+    border:2px solid var(--headings);
+    font-size:1.2em;
+    height:30px;
+    width:280px;
+}
+
+/* Footer */
+footer p {
+    color:var(--headings);
+    font-size:1.3em;
+    margin:24px 0 5px;
+    text-align:center;
+}
+
+/* Hiding */
+.hidden {
+    display:none;
+}
+
+.hide-small {
+    display:none;
+}
+
+/* Responsive Design */
+@media (min-width:1000px) {
+    /* Structure */
+    #content {
+        width:80%;
+        margin:auto;
+    }
+
+    /* Navigation */
+    .hide-small {
+        display:flex;
+        justify-content:center;
+    }
+
+    .nav-list li {
+        padding:0 5px;
+        text-align:center;
+    }
+
+    .nav-list li:not(:last-child)::after {
+    content:" |";
+    color:var(--headings);
+    }
+
+    #toggle-nav {
+        display:none;
+    }
+
+    /* Exercise */
+    .exercise {
+        margin:25px 0 0;
+    }
+}
+
