@@ -231,10 +231,22 @@ h1, h2, h3 {
     text-decoration: none;
 }
 
-.budget, .resources { background: #d2edda; color: var(--green); }
-.spending { background: #ffdbd1; color: #c84c3a; }
-.savings { background: #fff2c7; color: #bd860e; }
-.loans { background: #e5d0f2; color: #7547a3; }
+.budget, .resources { 
+    background: #d2edda; 
+    color: var(--green); 
+}
+.spending { 
+    background: #ffdbd1; 
+    color: #c84c3a; 
+}
+.savings { 
+    background: #fff2c7; 
+    color: #bd860e; 
+}
+.loans { 
+    background: #e5d0f2; 
+    color: #7547a3; 
+}
 
 /* Why it matters */
 .why-section {
