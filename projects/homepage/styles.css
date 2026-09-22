@@ -64,8 +64,14 @@ img {
 }
 
 .menu {
-    color: white;
-    font-size: 22px;
+    width: 30px;
+}
+
+.menu div {
+    width: 30px;
+    height: 4px;
+    margin: 5px 0;
+    background: white;
 }
 
 /* Hero */
