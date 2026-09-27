@@ -1,0 +1,153 @@
+/* Structure */
+:root {
+    --background: #ffffff;
+    --headings: #222222;
+    --grass: #7ecb4d;
+    --road: #3d3d3d;
+    --road-lines: #f8d64a;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--background);
+    margin: 0;
+    padding: 0;
+}
+
+#content {
+    width: 90%;
+    margin: auto;
+}
+
+/* Header */
+#main-header {
+    color: var(--headings);
+    padding-top: 22px;
+}
+
+#main-header h1 {
+    font-size: 1.3em;
+    margin: 0 0 7px;
+}
+
+#main-header p {
+    font-size: .9em;
+    margin: 0 0 18px;
+}
+
+/* Road */
+#road-area {
+    position: relative;
+    overflow: hidden;
+}
+
+#grass-top,
+#grass-bottom {
+    background-color: var(--grass);
+    height: 27px;
+}
+
+#road {
+    background-color: var(--road);
+    height: 52px;
+    position: relative;
+}
+
+#road-lines {
+    position: absolute;
+    top: 23px;
+    left: 0;
+    width: 100%;
+    border-top: 3px dashed var(--road-lines);
+}
+
+/* Cars */
+.car {
+    height: 14px;
+    width: 34px;
+    background-color: var(--car-color);
+    border-radius: 4px 4px 2px 2px;
+    position: absolute;
+    z-index: 1;
+}
+
+.car::before {
+    content: "";
+    height: 8px;
+    width: 17px;
+    background-color: #aee4f5;
+    border-radius: 4px 4px 0 0;
+    position: absolute;
+    top: -6px;
+    left: 8px;
+}
+
+.wheel {
+    height: 7px;
+    width: 7px;
+    background-color: #242424;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -4px;
+}
+
+.front-wheel {
+    right: 4px;
+}
+
+.back-wheel {
+    left: 4px;
+}
+
+/* Footer */
+footer {
+    background-color: #222222;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: .85em;
+}
+
+@media (min-width: 1000px) {
+    #content {
+        width: 90%;
+        max-width: 1100px;
+    }
+
+    #grass-top,
+    #grass-bottom {
+        height: 48px;
+    }
+
+    #road {
+        height: 100px;
+    }
+
+    #road-lines {
+        top: 47px;
+        border-top-width: 4px;
+    }
+
+    .car {
+        height: 24px;
+        width: 58px;
+    }
+
+    .car::before {
+        height: 14px;
+        width: 29px;
+        top: -11px;
+        left: 14px;
+    }
+
+    .wheel {
+        height: 11px;
+        width: 11px;
+        bottom: -6px;
+    }
+}
