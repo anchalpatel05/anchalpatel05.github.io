@@ -1,6 +1,7 @@
 :root {
     --green: #176f4e;
     --light-green: #d2edda;
+    --green-text: #b3d7ac;
     --yellow: #facb3c;
     --white: #fafaf7;
     --dark: #1e2038;
@@ -78,7 +79,7 @@ img {
 .hero {
     padding: 55px 25px;
     text-align: center;
-    background: #21855f;
+    background: var(--green);
     color: white;
 }
 
@@ -117,7 +118,7 @@ h1, h2, h3 {
 .intro {
     max-width: 700px;
     margin: 20px auto 0;
-    color: #b3d7ac;
+    color: var(--green-text);
     font-size: 16px;
     line-height: 1.6;
 }
@@ -234,7 +235,7 @@ h1, h2, h3 {
 }
 
 .budget, .resources { 
-    background: #d2edda; 
+    background: var(--light-green);
     color: var(--green); 
 }
 .spending { 
@@ -311,7 +312,7 @@ h1, h2, h3 {
 
 /* Budget preview */
 .budget-section {
-    background: linear-gradient(135deg, #2f6e4c, #4a9468);
+    background: var(--green);
     color: white;
 }
 
@@ -326,7 +327,7 @@ h1, h2, h3 {
 }
 
 .budget-intro, .cta-text {
-    color: #b3d7ac;
+    color: var(--green-text);
     font-size: 16px;
     line-height: 1.8;
 }
@@ -579,7 +580,7 @@ h1, h2, h3 {
 
 /* Call to action */
 .cta-card, .main-footer {
-    background: #356b4d;
+    background: var(--green);
     text-align: center;
 }
 
@@ -603,7 +604,7 @@ h1, h2, h3 {
 /* Footer */
 .main-footer {
     padding: 50px 25px;
-    color: #b3d7ac;
+    color: var(--green-text);
 }
 
 .main-footer p {
@@ -644,7 +645,7 @@ h1, h2, h3 {
     }
 
     .main-nav a {
-        color: #b3d7ac;
+        color: var(--green-text);
         font-size: 15px;
         font-weight: bold;
         text-decoration: none;
