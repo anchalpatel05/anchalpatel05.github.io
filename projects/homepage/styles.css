@@ -82,7 +82,7 @@ img {
     color: white;
 }
 
-.hero-label, .why-label {
+.hero-label, .why-label, .budget-label {
     display: inline-block;
     padding: 8px 18px;
     border-radius: 14px;
@@ -94,7 +94,7 @@ img {
     text-transform: uppercase;
 }
 
-.hero-label {
+.hero-label, .budget-label {
     margin: 0 0 20px;
     background: var(--yellow);
 }
@@ -177,23 +177,25 @@ h1, h2, h3 {
 }
 
 /* Tools */
-.tools-section, .why-section {
+.tools-section, .why-section, .budget-section, .life-section,
+.apps-section, .wins-section, .cta-section {
     padding: 85px 30px 70px;
 }
 
-.tools-section {
+.tools-section, .life-section, .apps-section, .wins-section {
     color: var(--dark);
     text-align: center;
 }
 
-.tools-section h2 {
+.tools-section h2, .life-section h2, .apps-header h2, .wins-section h2 {
     margin: 0;
     font-size: 32px;
 }
 
-.tools-section > p {
+.tools-section > p, .life-section > p, .apps-header p, .wins-section > p {
     color: var(--gray);
     font-size: 16px;
+    line-height: 1.6;
 }
 
 .tool-list {
@@ -253,7 +255,7 @@ h1, h2, h3 {
     background: var(--white);
 }
 
-.why-content {
+.why-content, .budget-content, .apps-header, .apps-list, .wins-list {
     max-width: 1150px;
     margin: auto;
 }
@@ -307,6 +309,329 @@ h1, h2, h3 {
     font-weight: bold;
 }
 
+/* Budget preview */
+.budget-section {
+    background: linear-gradient(135deg, #2f6e4c, #4a9468);
+    color: white;
+}
+
+.budget-label {
+    border-radius: 8px;
+}
+
+.budget-text h2 {
+    margin: 0;
+    font-size: 36px;
+    line-height: 1.2;
+}
+
+.budget-intro, .cta-text {
+    color: #b3d7ac;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.check-list {
+    margin: 25px 0 35px;
+    padding: 0;
+    list-style: none;
+}
+
+.check-list li {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 14px;
+    font-size: 16px;
+}
+
+.check-list i {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: var(--yellow);
+    color: var(--green);
+    font-size: 12px;
+}
+
+.budget-text .button, .life-card .button {
+    display: inline-block;
+    width: auto;
+    padding: 14px 28px;
+}
+
+.budget-card {
+    margin-top: 50px;
+    padding: 35px;
+    border-radius: 22px;
+    background: white;
+    color: var(--dark);
+}
+
+.budget-card h3 {
+    margin: 0 0 25px;
+    font-size: 24px;
+}
+
+.budget-card label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--gray);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.money-input {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+    padding: 12px 15px;
+    border: 2px solid #e3e6ea;
+    border-radius: 10px;
+}
+
+.money-input span {
+    color: #c84c3a;
+    font-weight: bold;
+}
+
+.money-input.income span {
+    color: var(--green);
+}
+
+.money-input input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 17px;
+}
+
+.budget-result {
+    margin: 10px 0 0;
+    color: var(--gray);
+    font-size: 15px;
+    text-align: center;
+}
+
+/* Student life */
+.life-section, .cta-section {
+    background: var(--white);
+}
+
+.life-section > p {
+    max-width: 600px;
+    margin: 20px auto 0;
+}
+
+.life-list {
+    max-width: 1150px;
+    margin: 55px auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    text-align: left;
+}
+
+.life-card {
+    min-height: 420px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    border-radius: 22px;
+    color: white;
+    background-color: #3b2d22;
+    background-size: cover;
+    background-position: center;
+}
+
+.food {
+    background-image: linear-gradient(transparent 20%, rgba(0, 0, 0, 0.75)), url("images/cooking.jpeg");
+}
+
+.piggy {
+    background-image: linear-gradient(transparent 20%, rgba(0, 0, 0, 0.75)), url("images/piggybank.jpeg");
+}
+
+.life-label {
+    margin: 0;
+    padding: 6px 14px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.food .life-label {
+    background: #c19a2e;
+}
+
+.piggy .life-label {
+    background: #6a3fa0;
+}
+
+.life-card h3 {
+    margin: 15px 0 0;
+    font-size: 28px;
+}
+
+.life-card p:not(.life-label) {
+    margin: 15px 0 25px;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* Apps & discounts */
+.apps-section {
+    background: white;
+    text-align: left;
+}
+
+.button-dark {
+    display: inline-block;
+    border-color: var(--green);
+    background: var(--green);
+    text-align: center;
+}
+
+.apps-list, .wins-list {
+    margin-top: 45px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.app-card, .win-card {
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    padding: 25px;
+    border: 2px solid #e3e6ea;
+    border-radius: 16px;
+}
+
+.app-card {
+    background: var(--white);
+}
+
+.app-icon, .win-icon, .cta-icon {
+    margin: 0;
+    font-size: 28px;
+}
+
+.app-title {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.app-title h3 {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+
+.app-tag {
+    margin: 0;
+    padding: 4px 10px;
+    border-radius: 6px;
+    background: var(--light-green);
+    color: var(--green);
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.app-card p:not(.app-icon, .app-tag) {
+    margin: 10px 0 0;
+    color: var(--gray);
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+/* Quick wins */
+.wins-section {
+    background: #fcf3d2;
+}
+
+.wins-list {
+    text-align: left;
+}
+
+.win-card {
+    border-color: #f5e6b0;
+    background: white;
+}
+
+.win-icon {
+    font-size: 22px;
+}
+
+.win-card p:not(.win-icon) {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+/* Call to action */
+.cta-card, .main-footer {
+    background: #356b4d;
+    text-align: center;
+}
+
+.cta-card {
+    max-width: 730px;
+    margin: auto;
+    padding: 60px 30px;
+    border-radius: 22px;
+    color: white;
+}
+
+.cta-icon {
+    font-size: 48px;
+}
+
+.cta-card h2 {
+    margin: 30px 0 0;
+    font-size: 32px;
+}
+
+/* Footer */
+.main-footer {
+    padding: 50px 25px;
+    color: #b3d7ac;
+}
+
+.main-footer p {
+    margin: 0 0 20px;
+    font-size: 16px;
+}
+
+.main-footer .footer-name {
+    margin-bottom: 15px;
+    color: white;
+    font-family: Georgia, serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.footer-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px 25px;
+}
+
+.footer-nav a {
+    color: inherit;
+    font-size: 15px;
+    text-decoration: none;
+}
+
 /* Desktop */
 @media (min-width: 1000px) {
     .main-header {
@@ -352,12 +677,17 @@ h1, h2, h3 {
         width: auto;
     }
 
-    .tools-section, .why-section {
+    .tools-section, .why-section, .budget-section, .life-section,
+    .apps-section, .wins-section, .cta-section {
         padding: 100px 8%;
     }
 
-    .tools-section h2 {
+    .tools-section h2, .cta-card h2 {
         font-size: 40px;
+    }
+
+    .budget-text h2, .life-section h2, .apps-header h2 {
+        font-size: 46px;
     }
 
     .tool-list {
@@ -379,7 +709,7 @@ h1, h2, h3 {
         gap: 70px;
     }
 
-    .why-image, .why-text {
+    .why-image, .why-text, .budget-text, .budget-card, .life-card {
         width: 50%;
     }
 
@@ -389,5 +719,46 @@ h1, h2, h3 {
 
     .why-text h2 {
         font-size: 34px;
+    }
+
+    .budget-content {
+        display: flex;
+        align-items: center;
+        gap: 100px;
+    }
+
+    .budget-card {
+        margin-top: 0;
+    }
+
+    .life-list {
+        flex-direction: row;
+    }
+
+    .apps-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .apps-header p {
+        max-width: 600px;
+    }
+
+    .apps-header .button, .cta-card .button {
+        width: auto;
+        padding: 14px 28px;
+    }
+
+    .wins-section h2 {
+        font-size: 36px;
+    }
+
+    .app-card, .win-card {
+        width: calc(25% - 15px);
+    }
+
+    .cta-card {
+        padding: 80px 50px;
     }
 }
