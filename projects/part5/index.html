@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<head>
+    <title>My Student Finance</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <a class="logo" href="index.html">
+            <p class="logo-icon">$</p>
+            <p class="logo-name">My Student Finance</p>
+        </a>
+        <nav class="main-nav">
+            <a href="budget-planner.html">Budget Planner</a>
+            <a href="#">Spending Tracker</a>
+            <a href="#">Savings Goals</a>
+            <a href="#">Student Loans &amp; Credit</a>
+            <a href="#">Resources</a>
+        </nav>
+        <div class="menu">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </header>
+
+    <main class="hero">
+        <section class="hero-content">
+            <p class="hero-label">Free for every student</p>
+            <h1>Stop stressing about money. Start thriving.</h1>
+            <p class="intro"> My Student Finance gives you budgeting tools, a spending tracker, savings planner, and loan guides — everything you need to manage money like a pro on a student budget.</p>
+            <div class="hero-actions">
+                <a class="button button-primary" href="budget-planner.html">Start Budget Planner &rarr;</a>
+                <a class="button button-secondary" href="#">Track My Spending</a>
+            </div>
+        </section>
+    </main>
+
+    <section class="facts">
+        <div>
+            <h2>73%</h2><p>of students worry about money</p>
+        </div>
+        <div>
+            <h2>$2,100</h2><p>average monthly student spending</p>
+        </div>
+        <div>
+            <h2>50%</h2><p>feel financially unprepared</p>
+        </div>
+        <div>
+            <h2>$0</h2><p>cost to use this site</p>
+        </div>
+    </section>
+
+    <section class="tools-section">
+        <h2>Five tools, one place</h2>
+        <p>Everything you need to take control of your student finances.</p>
+
+        <div class="tool-list">
+            <article class="tool-card budget">
+                <div class="tool-icon"><i class="fa-solid fa-chart-column"></i></div>
+                <h3>Budget Planner</h3>
+                <p>Learn the 50/30/20 rule and build your monthly budget with our interactive calculator.</p>
+                <a href="budget-planner.html">Explore &rarr;</a>
+            </article>
+
+            <article class="tool-card spending">
+                <div class="tool-icon"><i class="fa-solid fa-credit-card"></i></div>
+                <h3>Spending Tracker</h3>
+                <p>Log your daily purchases and see where your money is actually going each month.</p>
+                <a href="#">Explore &rarr;</a>
+            </article>
+
+            <article class="tool-card savings">
+                <div class="tool-icon"><i class="fa-solid fa-bullseye"></i></div>
+                <h3>Savings Goals</h3>
+                <p>Set a goal, track your progress, and build the habit of saving even on a tight budget.</p>
+                <a href="#">Explore &rarr;</a>
+            </article>
+
+            <article class="tool-card loans">
+                <div class="tool-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                <h3>Student Loans &amp; Credit</h3>
+                <p>Understand your loans, credit score, and how to avoid debt traps while in school.</p>
+                <a href="#">Explore &rarr;</a>
+            </article>
+
+            <article class="tool-card resources">
+                <div class="tool-icon"><i class="fa-solid fa-book"></i></div>
+                <h3>Resources</h3>
+                <p>Apps, tools, guides, and student discounts to help you manage money smarter.</p>
+                <a href="#">Explore &rarr;</a>
+            </article>
+        </div>
+    </section>
+
+    <section class="why-section">
+        <div class="why-content">
+            <img class="why-image" src="images/image1.jpeg" alt="Student working on a laptop">
+            <div class="why-text">
+                <p class="why-label">Why it matters</p>
+                <h2>College is expensive.<br><em>Your finances don't have to be confusing.</em></h2>
+                <p>Between tuition, rent, groceries, and social life, managing money in college feels overwhelming. Most students have never been taught basic budgeting — and it shows.</p>
+                <p>This site breaks it all down into clear, practical tools. No finance degree required — just your monthly numbers and five minutes.</p>
+                <div class="topic-list">
+                    <p>Budgeting Basics</p>
+                    <p>Spending Habits</p>
+                    <p>Savings Goals</p>
+                    <p>Loan Guidance</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="budget-section">
+        <div class="budget-content">
+            <div class="budget-text">
+                <p class="budget-label">Budget Planner Preview</p>
+                <h2>Know where every dollar goes</h2>
+                <p class="budget-intro">Enter your income and a few key expenses below for a quick snapshot. Head to the full Budget Planner for a detailed breakdown with the 50/30/20 rule.</p>
+                <ul class="check-list">
+                    <li><i class="fa-solid fa-check"></i>Learn the 50/30/20 rule</li>
+                    <li><i class="fa-solid fa-check"></i>Set spending targets by category</li>
+                    <li><i class="fa-solid fa-check"></i>See your annualized savings</li>
+                    <li><i class="fa-solid fa-check"></i>Get a budget health grade</li>
+                </ul>
+                <a class="button button-primary" href="budget-planner.html">Open Full Budget Planner &rarr;</a>
+            </div>
+
+            <form class="budget-card">
+                <h3>Quick Budget Check</h3>
+
+                <label for="income">&#128181; Monthly Income</label>
+                <div class="money-input income">
+                    <span>$</span>
+                    <input type="number" id="income" placeholder="1800">
+                </div>
+
+                <label for="rent">&#127968; Rent / Housing</label>
+                <div class="money-input">
+                    <span>$</span>
+                    <input type="number" id="rent" placeholder="600">
+                </div>
+
+                <label for="groceries">&#128722; Groceries</label>
+                <div class="money-input">
+                    <span>$</span>
+                    <input type="number" id="groceries" placeholder="200">
+                </div>
+
+                <label for="transportation">&#128652; Transportation</label>
+                <div class="money-input">
+                    <span>$</span>
+                    <input type="number" id="transportation" placeholder="80">
+                </div>
+
+                <label for="entertainment">&#127881; Entertainment &amp; Dining Out</label>
+                <div class="money-input">
+                    <span>$</span>
+                    <input type="number" id="entertainment" placeholder="150">
+                </div>
+
+                <p class="budget-result">Enter your income above to see results</p>
+            </form>
+        </div>
+    </section>
+
+    <section class="life-section">
+        <h2>Every part of student life, covered</h2>
+        <p>From what you eat to what you save — we help you make smarter choices across the board.</p>
+
+        <div class="life-list">
+            <article class="life-card food">
+                <p class="life-label">Food on a Budget</p>
+                <h3>Eat well without going broke</h3>
+                <p>Meal prepping, smart grocery shopping, and knowing when to use the dining hall can save $150&ndash;200/month.</p>
+                <a class="button button-primary" href="budget-planner.html">Budget Planner &rarr;</a>
+            </article>
+
+            <article class="life-card piggy">
+                <p class="life-label">Savings Goals</p>
+                <h3>Small savings, big results</h3>
+                <p>$25/week adds up to $1,300/year. Set a goal, track it visually, and watch it grow faster than you expect.</p>
+                <a class="button button-primary" href="#">Set a Savings Goal &rarr;</a>
+            </article>
+        </div>
+    </section>
+
+    <section class="apps-section">
+        <div class="apps-header">
+            <div>
+                <h2>Top Apps &amp; Discounts</h2>
+                <p>Tools and deals every student should know about — most of them free.</p>
+            </div>
+            <a class="button button-dark" href="#">View All Resources &rarr;</a>
+        </div>
+
+        <div class="apps-list">
+            <article class="app-card">
+                <p class="app-icon">&#127807;</p>
+                <div>
+                    <div class="app-title">
+                        <h3>Mint</h3>
+                        <p class="app-tag">Free</p>
+                    </div>
+                    <p>Auto-sync budgeting and spending insights.</p>
+                </div>
+            </article>
+
+            <article class="app-card">
+                <p class="app-icon">&#128200;</p>
+                <div>
+                    <div class="app-title">
+                        <h3>Credit Karma</h3>
+                        <p class="app-tag">Free</p>
+                    </div>
+                    <p>Track your credit score with no impact.</p>
+                </div>
+            </article>
+
+            <article class="app-card">
+                <p class="app-icon">&#127792;</p>
+                <div>
+                    <div class="app-title">
+                        <h3>Acorns</h3>
+                        <p class="app-tag">Investing</p>
+                    </div>
+                    <p>Round up purchases and invest spare change.</p>
+                </div>
+            </article>
+
+            <article class="app-card">
+                <p class="app-icon">&#128230;</p>
+                <div>
+                    <div class="app-title">
+                        <h3>Amazon Prime Student</h3>
+                        <p class="app-tag">50% off</p>
+                    </div>
+                    <p>Free shipping + Prime Video at half price.</p>
+                </div>
+            </article>
+
+            <article class="app-card">
+                <p class="app-icon">&#127925;</p>
+                <div>
+                    <div class="app-title">
+                        <h3>Spotify Student</h3>
+                        <p class="app-tag">50% off</p>
+                    </div>
+                    <p>Includes Hulu — half price with .edu email.</p>
+                </div>
+            </article>
+
+            <article class="app-card">
+                <p class="app-icon">&#127974;</p>
+                <div>
+                    <div class="app-title">
+                        <h3>Ally Bank HYSA</h3>
+                        <p class="app-tag">4&ndash;5% APY</p>
+                    </div>
+                    <p>High-yield savings with no minimums or fees.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="wins-section">
+        <h2>Quick wins for this week</h2>
+        <p>Pick two and start today.</p>
+
+        <div class="wins-list">
+            <div class="win-card">
+                <p class="win-icon">&#9749;</p>
+                <p>Make coffee at home — saves $80+/month vs. daily caf&eacute; runs</p>
+            </div>
+            <div class="win-card">
+                <p class="win-icon">&#128203;</p>
+                <p>Cancel one subscription you forgot about</p>
+            </div>
+            <div class="win-card">
+                <p class="win-icon">&#128722;</p>
+                <p>Buy store-brand groceries this week — same quality, 30% cheaper</p>
+            </div>
+            <div class="win-card">
+                <p class="win-icon">&#128176;</p>
+                <p>Move $25 to a savings account right now</p>
+            </div>
+            <div class="win-card">
+                <p class="win-icon">&#127991;</p>
+                <p>Check UNiDAYS for student discounts before any online purchase</p>
+            </div>
+            <div class="win-card">
+                <p class="win-icon">&#127857;</p>
+                <p>Pack lunch 3 days this week instead of buying</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="cta-card">
+            <p class="cta-icon">&#127919;</p>
+            <h2>Ready to take control?</h2>
+            <p class="cta-text">Start with the Budget Planner — plug in your real numbers and get a personalized monthly budget in under 5 minutes.</p>
+            <div class="hero-actions">
+                <a class="button button-primary" href="budget-planner.html">Budget Planner &rarr;</a>
+                <a class="button button-secondary" href="#">Spending Tracker &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <p class="footer-name">My Student Finance</p>
+        <p>Helping students spend smarter, save better, and stress less.</p>
+        <nav class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="budget-planner.html">Budget Planner</a>
+            <a href="#">Spending Tracker</a>
+            <a href="#">Savings Goals</a>
+            <a href="#">Student Loans &amp; Credit</a>
+            <a href="#">Resources</a>
+        </nav>
+    </footer>
+</body>
+</html>
