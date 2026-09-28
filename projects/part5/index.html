@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My Student Finance</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
@@ -12,10 +13,10 @@
         </a>
         <nav class="main-nav">
             <a href="budget-planner.html">Budget Planner</a>
-            <a href="#">Spending Tracker</a>
-            <a href="#">Savings Goals</a>
-            <a href="#">Student Loans &amp; Credit</a>
-            <a href="#">Resources</a>
+            <a href="spending-tracker.html">Spending Tracker</a>
+            <a href="savings-goals.html">Savings Goals</a>
+            <a href="studentloans.html">Student Loans &amp; Credit</a>
+            <a href="resources.html">Resources</a>
         </nav>
         <div class="menu">
             <div></div>
@@ -25,15 +26,15 @@
     </header>
 
     <main class="hero">
-        <section class="hero-content">
+        <div class="hero-content">
             <p class="hero-label">Free for every student</p>
             <h1>Stop stressing about money. Start thriving.</h1>
             <p class="intro"> My Student Finance gives you budgeting tools, a spending tracker, savings planner, and loan guides — everything you need to manage money like a pro on a student budget.</p>
             <div class="hero-actions">
                 <a class="button button-primary" href="budget-planner.html">Start Budget Planner &rarr;</a>
-                <a class="button button-secondary" href="#">Track My Spending</a>
+                <a class="button button-secondary" href="spending-tracker.html">Track My Spending</a>
             </div>
-        </section>
+        </div>
     </main>
 
     <section class="facts">
@@ -67,28 +68,28 @@
                 <div class="tool-icon"><i class="fa-solid fa-credit-card"></i></div>
                 <h3>Spending Tracker</h3>
                 <p>Log your daily purchases and see where your money is actually going each month.</p>
-                <a href="#">Explore &rarr;</a>
+                <a href="spending-tracker.html">Explore &rarr;</a>
             </article>
 
             <article class="tool-card savings">
                 <div class="tool-icon"><i class="fa-solid fa-bullseye"></i></div>
                 <h3>Savings Goals</h3>
                 <p>Set a goal, track your progress, and build the habit of saving even on a tight budget.</p>
-                <a href="#">Explore &rarr;</a>
+                <a href="savings-goals.html">Explore &rarr;</a>
             </article>
 
             <article class="tool-card loans">
                 <div class="tool-icon"><i class="fa-solid fa-graduation-cap"></i></div>
                 <h3>Student Loans &amp; Credit</h3>
                 <p>Understand your loans, credit score, and how to avoid debt traps while in school.</p>
-                <a href="#">Explore &rarr;</a>
+                <a href="studentloans.html">Explore &rarr;</a>
             </article>
 
             <article class="tool-card resources">
                 <div class="tool-icon"><i class="fa-solid fa-book"></i></div>
                 <h3>Resources</h3>
                 <p>Apps, tools, guides, and student discounts to help you manage money smarter.</p>
-                <a href="#">Explore &rarr;</a>
+                <a href="resources.html">Explore &rarr;</a>
             </article>
         </div>
     </section>
@@ -172,15 +173,15 @@
             <article class="life-card food">
                 <p class="life-label">Food on a Budget</p>
                 <h3>Eat well without going broke</h3>
-                <p>Meal prepping, smart grocery shopping, and knowing when to use the dining hall can save $150&ndash;200/month.</p>
+                <p class="life-text">Meal prepping, smart grocery shopping, and knowing when to use the dining hall can save $150&ndash;200/month.</p>
                 <a class="button button-primary" href="budget-planner.html">Budget Planner &rarr;</a>
             </article>
 
             <article class="life-card piggy">
                 <p class="life-label">Savings Goals</p>
                 <h3>Small savings, big results</h3>
-                <p>$25/week adds up to $1,300/year. Set a goal, track it visually, and watch it grow faster than you expect.</p>
-                <a class="button button-primary" href="#">Set a Savings Goal &rarr;</a>
+                <p class="life-text">$25/week adds up to $1,300/year. Set a goal, track it visually, and watch it grow faster than you expect.</p>
+                <a class="button button-primary" href="savings-goals.html">Set a Savings Goal &rarr;</a>
             </article>
         </div>
     </section>
@@ -191,7 +192,7 @@
                 <h2>Top Apps &amp; Discounts</h2>
                 <p>Tools and deals every student should know about — most of them free.</p>
             </div>
-            <a class="button button-dark" href="#">View All Resources &rarr;</a>
+            <a class="button button-dark" href="resources.html">View All Resources &rarr;</a>
         </div>
 
         <div class="apps-list">
@@ -202,7 +203,7 @@
                         <h3>Mint</h3>
                         <p class="app-tag">Free</p>
                     </div>
-                    <p>Auto-sync budgeting and spending insights.</p>
+                    <p class="app-text">Auto-sync budgeting and spending insights.</p>
                 </div>
             </article>
 
@@ -213,7 +214,7 @@
                         <h3>Credit Karma</h3>
                         <p class="app-tag">Free</p>
                     </div>
-                    <p>Track your credit score with no impact.</p>
+                    <p class="app-text">Track your credit score with no impact.</p>
                 </div>
             </article>
 
@@ -224,7 +225,7 @@
                         <h3>Acorns</h3>
                         <p class="app-tag">Investing</p>
                     </div>
-                    <p>Round up purchases and invest spare change.</p>
+                    <p class="app-text">Round up purchases and invest spare change.</p>
                 </div>
             </article>
 
@@ -235,7 +236,7 @@
                         <h3>Amazon Prime Student</h3>
                         <p class="app-tag">50% off</p>
                     </div>
-                    <p>Free shipping + Prime Video at half price.</p>
+                    <p class="app-text">Free shipping + Prime Video at half price.</p>
                 </div>
             </article>
 
@@ -246,7 +247,7 @@
                         <h3>Spotify Student</h3>
                         <p class="app-tag">50% off</p>
                     </div>
-                    <p>Includes Hulu — half price with .edu email.</p>
+                    <p class="app-text">Includes Hulu — half price with .edu email.</p>
                 </div>
             </article>
 
@@ -257,7 +258,7 @@
                         <h3>Ally Bank HYSA</h3>
                         <p class="app-tag">4&ndash;5% APY</p>
                     </div>
-                    <p>High-yield savings with no minimums or fees.</p>
+                    <p class="app-text">High-yield savings with no minimums or fees.</p>
                 </div>
             </article>
         </div>
@@ -270,27 +271,27 @@
         <div class="wins-list">
             <div class="win-card">
                 <p class="win-icon">&#9749;</p>
-                <p>Make coffee at home — saves $80+/month vs. daily caf&eacute; runs</p>
+                <p class="win-text">Make coffee at home — saves $80+/month vs. daily caf&eacute; runs</p>
             </div>
             <div class="win-card">
                 <p class="win-icon">&#128203;</p>
-                <p>Cancel one subscription you forgot about</p>
+                <p class="win-text">Cancel one subscription you forgot about</p>
             </div>
             <div class="win-card">
                 <p class="win-icon">&#128722;</p>
-                <p>Buy store-brand groceries this week — same quality, 30% cheaper</p>
+                <p class="win-text">Buy store-brand groceries this week — same quality, 30% cheaper</p>
             </div>
             <div class="win-card">
                 <p class="win-icon">&#128176;</p>
-                <p>Move $25 to a savings account right now</p>
+                <p class="win-text">Move $25 to a savings account right now</p>
             </div>
             <div class="win-card">
                 <p class="win-icon">&#127991;</p>
-                <p>Check UNiDAYS for student discounts before any online purchase</p>
+                <p class="win-text">Check UNiDAYS for student discounts before any online purchase</p>
             </div>
             <div class="win-card">
                 <p class="win-icon">&#127857;</p>
-                <p>Pack lunch 3 days this week instead of buying</p>
+                <p class="win-text">Pack lunch 3 days this week instead of buying</p>
             </div>
         </div>
     </section>
@@ -302,7 +303,7 @@
             <p class="cta-text">Start with the Budget Planner — plug in your real numbers and get a personalized monthly budget in under 5 minutes.</p>
             <div class="hero-actions">
                 <a class="button button-primary" href="budget-planner.html">Budget Planner &rarr;</a>
-                <a class="button button-secondary" href="#">Spending Tracker &rarr;</a>
+                <a class="button button-secondary" href="spending-tracker.html">Spending Tracker &rarr;</a>
             </div>
         </div>
     </section>
@@ -313,11 +314,12 @@
         <nav class="footer-nav">
             <a href="index.html">Home</a>
             <a href="budget-planner.html">Budget Planner</a>
-            <a href="#">Spending Tracker</a>
-            <a href="#">Savings Goals</a>
-            <a href="#">Student Loans &amp; Credit</a>
-            <a href="#">Resources</a>
+            <a href="spending-tracker.html">Spending Tracker</a>
+            <a href="savings-goals.html">Savings Goals</a>
+            <a href="studentloans.html">Student Loans &amp; Credit</a>
+            <a href="resources.html">Resources</a>
         </nav>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

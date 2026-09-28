@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Savings Goals | My Student Finance</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <a class="logo" href="index.html">
+            <p class="logo-icon">$</p>
+            <p class="logo-name">My Student Finance</p>
+        </a>
+        <nav class="main-nav">
+            <a href="budget-planner.html">Budget Planner</a>
+            <a href="spending-tracker.html">Spending Tracker</a>
+            <a class="active" href="savings-goals.html">Savings Goals</a>
+            <a href="studentloans.html">Student Loans &amp; Credit</a>
+            <a href="resources.html">Resources</a>
+        </nav>
+        <div class="menu">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </header>
+
+    <main class="page-hero savings-hero">
+        <div class="page-hero-content">
+            <h1><em>Savings</em> Goals</h1>
+            <p>Set goals, track progress, and celebrate wins. Whether it's a trip, a laptop, or your first emergency fund — every dollar counts.</p>
+            <div class="page-hero-actions">
+                <a class="button button-gold" href="#">+ New Savings Goal</a>
+            </div>
+        </div>
+    </main>
+
+    <section class="goals-section">
+        <div class="goals-content">
+            <div class="stat-list">
+                <div class="stat-card budget">
+                    <p>Total Saved</p>
+                    <p class="stat-number">$1270</p>
+                </div>
+                <div class="stat-card savings">
+                    <p>Total Goal</p>
+                    <p class="stat-number">$2500</p>
+                </div>
+                <div class="stat-card loans">
+                    <p>Goals Completed</p>
+                    <p class="stat-number">1 / 3</p>
+                </div>
+            </div>
+
+            <div class="goal-list">
+                <article class="goal-card">
+                    <div class="goal-title">
+                        <p class="expense-icon budget">&#9992;&#65039;</p>
+                        <div>
+                            <h3>Spring Break Trip</h3>
+                            <p>Target: $800</p>
+                        </div>
+                        <a class="expense-delete" href="#">&times;</a>
+                    </div>
+                    <div class="goal-amount">
+                        <p class="goal-saved">$320</p>
+                        <p>40%</p>
+                    </div>
+                    <div class="bar"><span class="fill-40"></span></div>
+                    <p class="goal-note">$480 to go &middot; ~10 weeks at $50/wk</p>
+                    <a class="add-savings" href="#">+ Add Savings</a>
+                </article>
+
+                <article class="goal-card purple">
+                    <div class="goal-title">
+                        <p class="expense-icon loans">&#128187;</p>
+                        <div>
+                            <h3>New Laptop</h3>
+                            <p>Target: $1,200</p>
+                        </div>
+                        <a class="expense-delete" href="#">&times;</a>
+                    </div>
+                    <div class="goal-amount">
+                        <p class="goal-saved">$450</p>
+                        <p>38%</p>
+                    </div>
+                    <div class="bar"><span class="fill-38"></span></div>
+                    <p class="goal-note">$750 to go &middot; ~15 weeks at $50/wk</p>
+                    <a class="add-savings" href="#">+ Add Savings</a>
+                </article>
+
+                <article class="goal-card gold completed">
+                    <p class="card-badge">&#10003; Completed!</p>
+                    <div class="goal-title">
+                        <p class="expense-icon savings">&#128737;&#65039;</p>
+                        <div>
+                            <h3>Emergency Fund</h3>
+                            <p>Target: $500</p>
+                        </div>
+                        <a class="expense-delete" href="#">&times;</a>
+                    </div>
+                    <div class="goal-amount">
+                        <p class="goal-saved">$500</p>
+                        <p>100%</p>
+                    </div>
+                    <div class="bar"><span class="fill-100"></span></div>
+                    <p class="goal-note">$0 to go</p>
+                </article>
+            </div>
+
+            <h2>How to Actually Hit Your Goals</h2>
+            <div class="tip-list">
+                <article class="tip-card">
+                    <p class="tip-icon">&#128260;</p>
+                    <h3>Automate it</h3>
+                    <p class="tip-text">Set up an auto-transfer on payday. Even $20/week = $1,040/year without thinking about it.</p>
+                </article>
+                <article class="tip-card">
+                    <p class="tip-icon">&#129689;</p>
+                    <h3>Round-up rule</h3>
+                    <p class="tip-text">Every time you spend $7.40, round up to $8 and move $0.60 to savings. It adds up fast.</p>
+                </article>
+                <article class="tip-card">
+                    <p class="tip-icon">&#128230;</p>
+                    <h3>Separate accounts</h3>
+                    <p class="tip-text">Open a free high-yield savings account (try Ally or Marcus) just for goals. Out of sight, out of mind.</p>
+                </article>
+                <article class="tip-card">
+                    <p class="tip-icon">&#127919;</p>
+                    <h3>Name your goals</h3>
+                    <p class="tip-text">"Spring Break Fund" is more motivating than just "savings." A named goal has a purpose.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <p class="footer-name">My Student Finance</p>
+        <p>Helping students spend smarter, save better, and stress less.</p>
+        <nav class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="budget-planner.html">Budget Planner</a>
+            <a href="spending-tracker.html">Spending Tracker</a>
+            <a href="savings-goals.html">Savings Goals</a>
+            <a href="studentloans.html">Student Loans &amp; Credit</a>
+            <a href="resources.html">Resources</a>
+        </nav>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
