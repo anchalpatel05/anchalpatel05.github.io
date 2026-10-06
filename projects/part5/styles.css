@@ -465,6 +465,16 @@ section {
     text-align: center;
 }
 
+.budget-result.good {
+    color: var(--green);
+    font-weight: 700;
+}
+
+.budget-result.bad {
+    color: var(--red);
+    font-weight: 700;
+}
+
 /* Student life */
 .life-section, .cta-section, .rule-section, .compare-section, .build-section,
 .tracker-section, .goals-section, .loans-section, .traps-section,
