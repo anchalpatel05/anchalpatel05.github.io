@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Spending Tracker | My Student Finance</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <a class="logo" href="index.html">
+            <p class="logo-icon">$</p>
+            <p class="logo-name">My Student Finance</p>
+        </a>
+        <nav class="main-nav">
+            <a href="budget-planner.html">Budget Planner</a>
+            <a class="active" href="spending-tracker.html">Spending Tracker</a>
+            <a href="savings-goals.html">Savings Goals</a>
+            <a href="studentloans.html">Student Loans &amp; Credit</a>
+            <a href="resources.html">Resources</a>
+        </nav>
+        <div class="menu">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </header>
+
+    <main class="page-hero tracker-hero">
+        <div class="page-hero-content">
+            <h1><em>Spending</em> Tracker</h1>
+            <p>Log your purchases, set a monthly budget, and see exactly where your money goes. Knowledge is the first step to control.</p>
+            <div class="page-hero-actions">
+                <label class="budget-input">
+                    Monthly budget: $
+                    <input type="number" value="500">
+                </label>
+                <a class="button button-red" href="#">+ Add Expense</a>
+            </div>
+        </div>
+    </main>
+
+    <section class="tracker-section">
+        <div class="tracker-content">
+            <div class="tracker-main">
+                <div class="stat-list">
+                    <div class="stat-card spending">
+                        <p>Total Spent</p>
+                        <p class="stat-number">$139.87</p>
+                    </div>
+                    <div class="stat-card budget">
+                        <p>Budget Left</p>
+                        <p class="stat-number">$360.13</p>
+                    </div>
+                    <div class="stat-card loans">
+                        <p># of Purchases</p>
+                        <p class="stat-number">6</p>
+                    </div>
+                </div>
+
+                <div class="progress-card">
+                    <div class="progress-title">
+                        <h3>Monthly Budget Progress</h3>
+                        <p>28% used</p>
+                    </div>
+                    <div class="bar"><span class="fill-28"></span></div>
+                </div>
+
+                <div class="filter-list">
+                    <a class="filter active" href="#">All</a>
+                    <a class="filter" href="#">Food &amp; Dining</a>
+                    <a class="filter" href="#">Transportation</a>
+                    <a class="filter" href="#">Entertainment</a>
+                    <a class="filter" href="#">Shopping</a>
+                    <a class="filter" href="#">Housing</a>
+                    <a class="filter" href="#">Health</a>
+                    <a class="filter" href="#">Education</a>
+                    <a class="filter" href="#">Other</a>
+                </div>
+
+                <div class="expense">
+                    <p class="expense-icon budget">&#128652;</p>
+                    <div class="expense-text">
+                        <h3>Uber to airport</h3>
+                        <p>Transportation &middot; Sep 6</p>
+                    </div>
+                    <p class="expense-amount">$22.00</p>
+                    <a class="expense-delete" href="#">&times;</a>
+                </div>
+
+                <div class="expense">
+                    <p class="expense-icon savings">&#127829;</p>
+                    <div class="expense-text">
+                        <h3>Chipotle burrito bowl</h3>
+                        <p>Food &amp; Dining &middot; Sep 5</p>
+                    </div>
+                    <p class="expense-amount">$11.25</p>
+                    <a class="expense-delete" href="#">&times;</a>
+                </div>
+
+                <div class="expense">
+                    <p class="expense-icon savings">&#128218;</p>
+                    <div class="expense-text">
+                        <h3>Target — notebooks + pens</h3>
+                        <p>Education &middot; Sep 4</p>
+                    </div>
+                    <p class="expense-amount">$18.45</p>
+                    <a class="expense-delete" href="#">&times;</a>
+                </div>
+
+                <div class="expense">
+                    <p class="expense-icon loans">&#127881;</p>
+                    <div class="expense-text">
+                        <h3>Netflix subscription</h3>
+                        <p>Entertainment &middot; Sep 3</p>
+                    </div>
+                    <p class="expense-amount">$15.99</p>
+                    <a class="expense-delete" href="#">&times;</a>
+                </div>
+
+                <div class="expense">
+                    <p class="expense-icon budget">&#128652;</p>
+                    <div class="expense-text">
+                        <h3>Monthly bus pass</h3>
+                        <p>Transportation &middot; Sep 2</p>
+                    </div>
+                    <p class="expense-amount">$30.00</p>
+                    <a class="expense-delete" href="#">&times;</a>
+                </div>
+
+                <div class="expense">
+                    <p class="expense-icon savings">&#127829;</p>
+                    <div class="expense-text">
+                        <h3>Grocery run – Aldi</h3>
+                        <p>Food &amp; Dining &middot; Sep 1</p>
+                    </div>
+                    <p class="expense-amount">$42.18</p>
+                    <a class="expense-delete" href="#">&times;</a>
+                </div>
+            </div>
+
+            <aside class="tracker-side">
+                <div class="category-card">
+                    <h3>Spending by Category</h3>
+
+                    <div class="category gold">
+                        <div class="category-title">
+                            <h4>&#127829; Food &amp; Dining</h4>
+                            <p>$53.43</p>
+                        </div>
+                        <div class="bar"><span class="fill-38"></span></div>
+                        <p class="category-percent">38% of spending</p>
+                    </div>
+
+                    <div class="category">
+                        <div class="category-title">
+                            <h4>&#128652; Transportation</h4>
+                            <p>$52.00</p>
+                        </div>
+                        <div class="bar"><span class="fill-37"></span></div>
+                        <p class="category-percent">37% of spending</p>
+                    </div>
+
+                    <div class="category gold">
+                        <div class="category-title">
+                            <h4>&#128218; Education</h4>
+                            <p>$18.45</p>
+                        </div>
+                        <div class="bar"><span class="fill-13"></span></div>
+                        <p class="category-percent">13% of spending</p>
+                    </div>
+
+                    <div class="category purple">
+                        <div class="category-title">
+                            <h4>&#127881; Entertainment</h4>
+                            <p>$15.99</p>
+                        </div>
+                        <div class="bar"><span class="fill-11"></span></div>
+                        <p class="category-percent">11% of spending</p>
+                    </div>
+                </div>
+
+                <div class="smart-tip">
+                    <h4>&#128161; Smart tip</h4>
+                    <p>Track every purchase for one full month. Most students discover 1&ndash;3 categories where they're spending 2&times; what they thought.</p>
+                </div>
+            </aside>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <p class="footer-name">My Student Finance</p>
+        <p>Helping students spend smarter, save better, and stress less.</p>
+        <nav class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="budget-planner.html">Budget Planner</a>
+            <a href="spending-tracker.html">Spending Tracker</a>
+            <a href="savings-goals.html">Savings Goals</a>
+            <a href="studentloans.html">Student Loans &amp; Credit</a>
+            <a href="resources.html">Resources</a>
+        </nav>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
