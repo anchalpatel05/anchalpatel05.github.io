@@ -92,6 +92,13 @@ body {
     line-height: 1.4;
 }
 
+.card .project-links {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 8px 0;
+}
+
 #projects {
     margin-top: 45px;
 }
